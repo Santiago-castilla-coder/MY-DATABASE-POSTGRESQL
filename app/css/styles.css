@@ -1,0 +1,111 @@
+/* Reset básico  xd*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+input, button {
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin: 6px 4px 12px 0;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+button {
+  background: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #1c5980;
+}
+
+button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+#clientes-list, #facturas-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 250px; /* ajustado para menos altura */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px; /* tamaño un poco más pequeño */
+}
+
+#clientes-list li, #facturas-list li {
+  padding: 6px 10px; /* padding reducido */
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; /* evita saltos de línea */
+  overflow: hidden;
+  text-overflow: ellipsis; /* agrega ... si el texto es largo */
+}
+
+#clientes-list li:last-child, #facturas-list li:last-child {
+  border-bottom: none;
+}
+
+button.delete-btn {
+  background: #e74c3c;
+  margin-left: 10px;
+}
+
+button.delete-btn:hover {
+  background: #c0392b;
+}
+
+#search-result {
+  margin-top: 10px;
+  padding: 10px;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  border-radius: 6px;
+  color: #3c763d;
+}
