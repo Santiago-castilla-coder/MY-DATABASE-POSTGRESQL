@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Client & Invoice Management</title>
-  <link rel="stylesheet" href="/app/css/styles.css" />
+  <link rel="stylesheet" href="app/css/styles.css" />
 </head>
 <body>
   <header>
@@ -14,24 +14,14 @@
   <main>
     <section id="clients-section">
       <h2>Clients</h2>
-      <input type="text" id="search-id" placeholder="Search client by ID" />
-      <button id="search-btn">Search</button>
+      <div class="search-bar">
+        <input type="text" id="search-id" placeholder="Search client by ID" />
+        <button id="search-btn">Search</button>
+      </div>
       <div id="search-result"></div>
 
       <h3>Clients List</h3>
       <ul id="clients-list"></ul>
-
-      <h3 id="form-title">Create Client</h3>
-      <form id="client-form">
-        <input type="hidden" id="id_client" />
-        <input type="text" id="customer_name" placeholder="Full Name" required />
-        <input type="text" id="identification" placeholder="Identification" required />
-        <input type="text" id="address" placeholder="Address" />
-        <input type="tel" id="phone_number" placeholder="Phone" />
-        <input type="email" id="email" placeholder="Email" />
-        <button type="submit">Save</button>
-        <button type="button" id="cancel-btn" style="display:none;">Cancel</button>
-      </form>
     </section>
 
     <section id="invoices-section">
@@ -40,6 +30,6 @@
     </section>
   </main>
 
-  <script type="module" src="/app/js/main.js"></script>
+  <script type="module" src="app/js/main.js"></script>
 </body>
 </html>
