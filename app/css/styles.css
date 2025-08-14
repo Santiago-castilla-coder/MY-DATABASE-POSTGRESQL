@@ -1,111 +1,100 @@
-/* Reset básico  xd*/
-* {
-  box-sizing: border-box;
-}
-
+/* Estilo general */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f2f5;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  background-color: #f4f6f8;
   color: #333;
 }
 
+/* Encabezado */
 header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-h1 {
-  font-weight: 700;
-  color: #2c3e50;
-}
-
+/* Contenido principal */
 main {
   max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  margin: auto;
+  padding: 1rem;
 }
 
+/* Secciones */
 section {
-  margin-bottom: 40px;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Títulos */
+h2, h3 {
+  color: #0077cc;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs y botones */
 input, button {
-  font-size: 1rem;
-  padding: 8px 10px;
-  margin: 6px 4px 12px 0;
-  border: 1.8px solid #ddd;
-  border-radius: 6px;
-  transition: border-color 0.3s ease;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 input:focus {
-  border-color: #2980b9;
+  border-color: #0077cc;
   outline: none;
 }
 
+/* Botones */
 button {
-  background: #2980b9;
+  background-color: #0077cc;
   color: white;
-  border: none;
   cursor: pointer;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #1c5980;
+  background-color: #005fa3;
 }
 
-button:disabled {
-  background: #95a5a6;
-  cursor: not-allowed;
+.delete-btn {
+  background-color: #e74c3c;
 }
 
-#clientes-list, #facturas-list {
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Listas */
+ul {
   list-style: none;
-  padding-left: 0;
-  max-height: 250px; /* ajustado para menos altura */
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fafafa;
-  font-size: 14px; /* tamaño un poco más pequeño */
+  padding: 0;
 }
 
-#clientes-list li, #facturas-list li {
-  padding: 6px 10px; /* padding reducido */
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  white-space: nowrap; /* evita saltos de línea */
-  overflow: hidden;
-  text-overflow: ellipsis; /* agrega ... si el texto es largo */
+li {
+  background-color: #f9f9f9;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
 }
 
-#clientes-list li:last-child, #facturas-list li:last-child {
-  border-bottom: none;
-}
-
-button.delete-btn {
-  background: #e74c3c;
-  margin-left: 10px;
-}
-
-button.delete-btn:hover {
-  background: #c0392b;
+li div {
+  margin-bottom: 0.2rem;
 }
 
 #search-result {
-  margin-top: 10px;
-  padding: 10px;
-  background: #dff0d8;
-  border: 1px solid #3c763d;
-  border-radius: 6px;
-  color: #3c763d;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #eef6ff;
+  border-left: 4px solid #0077cc;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
 }
